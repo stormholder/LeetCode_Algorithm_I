@@ -13,23 +13,24 @@ namespace _704_Binary_Search.Test
         {
             new object[]
             {
-                new object[] {-1,0,3,5,9,12},
+                new int[] {-1,0,3,5,9,12},
                 9,
                 4
             },
             new object[]
             {
-                new object[] {-1,0,3,5,9,12},
+                new int[] {-1,0,3,5,9,12},
                 2,
                 -1
             },
         };
 
         [TestCaseSource(nameof(TestCases))]
-        public void Test1()
+        public void Test1(int[] nums, int target, int expected)
         {
             Solution solution = new();
-            Assert.Pass();
+            var actual = solution.Search(nums, target);
+            Assert.That(actual, Is.EqualTo(expected));
         }
     }
 }
