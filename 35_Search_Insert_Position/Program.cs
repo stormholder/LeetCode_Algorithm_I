@@ -8,9 +8,21 @@ public class Solution
         decimal R = nums.Length - 1;
         int result = nums.Length - 1;
 
+        if (nums[0] > target)
+        {
+            return 0;
+        }
+        if (nums[0] == target)
+        {
+            return 0;
+        }
         if (nums[result] < target)
         {
             return result + 1;
+        }
+        if (nums[result] == target)
+        {
+            return result;
         }
         while (R - L > 1)
         {
@@ -30,7 +42,12 @@ public class Solution
                 L = m;
             }
         }
-
+        if (nums[(int)R] == target)
+            return (int)R;
+        if (nums[(int)L] >= target)
+            return (int)L;
+        if (target > nums[(int)R])
+            return (int)R + 1;
         return result;
     }
 }

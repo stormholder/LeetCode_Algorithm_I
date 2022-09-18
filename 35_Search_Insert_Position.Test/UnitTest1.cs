@@ -19,16 +19,34 @@ namespace _35_Search_Insert_Position.Test
             },
             new object[]
             {
-                new int[] { 1,3,5,6 },
+                new int[] { 1, 3, 5, 6 },
                 2,
                 1
             },
             new object[]
             {
-                new int[] { 1,3,5,6 },
+                new int[] { 1, 3, 5, 6 },
                 7,
                 4
             },
+            new object[]
+            {
+                new int[] { 1, 3 },
+                1,
+                0
+            },
+            new object[]
+            {
+                new int[] { 1, 3 },
+                0,
+                0
+            },
+            new object[]
+            {
+                new int[] { 1, 3, 5 },
+                2,
+                1
+            }
         };
 
         [TestCaseSource(nameof(TestCases))]
