@@ -1,3 +1,5 @@
+using SearchInsertPosition;
+
 namespace _35_Search_Insert_Position.Test
 {
     public class Tests
@@ -32,7 +34,9 @@ namespace _35_Search_Insert_Position.Test
         [TestCaseSource(nameof(TestCases))]
         public void Test1(int[] nums, int target, int expenced)
         {
-            Assert.Pass();
+            Solution solution = new();
+            var actual = solution.SearchInsert(nums, target);
+            Assert.That(actual, Is.EqualTo(expenced));
         }
     }
 }
