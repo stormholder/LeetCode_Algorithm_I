@@ -22,7 +22,25 @@ namespace _189_Rotate_Array.Test
                 new int[] { -1, -100, 3, 99 },
                 2,
                 new int[] { 3, 99, -1, -100 }
-            }
+            },
+            new object[]
+            {
+                new int[] { 1, 2 },
+                3,
+                new int[] { 2, 1 }
+            },
+            new object[]
+            {
+                new int[] { 1, 2 },
+                5,
+                new int[] { 2, 1 }
+            },
+            new object[]
+            {
+                new int[] { 1 },
+                2,
+                new int[] { 1 }
+            },
         };
 
         [TestCaseSource(nameof(TestCases))]

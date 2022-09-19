@@ -4,6 +4,12 @@ public class Solution
 {
     public void Rotate(int[] nums, int k)
     {
+        if (nums.Length < 2)
+            return;
+        while (nums.Length < k)
+        {
+            k -= nums.Length;
+        }
         int[] tmp = new int[k];
         int[] tmp2 = new int[nums.Length - k];
         int i = 0;
