@@ -11,7 +11,7 @@ public class Solution
             int a = numbers[p];
             int delta = target - a;
             int deltaIndex = -1;
-            for (int j = p; j < numbers.Length; j++)
+            for (int j = i; j < numbers.Length; j++)
             {
                 if (numbers[j] == delta)
                 {
