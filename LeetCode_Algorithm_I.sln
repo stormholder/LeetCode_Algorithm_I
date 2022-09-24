@@ -15,13 +15,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "35_Search_Insert_Position",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "35_Search_Insert_Position.Test", "35_Search_Insert_Position.Test\35_Search_Insert_Position.Test.csproj", "{14538B32-59DC-4454-8582-B6A776B9847D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "977_Squares", "977_Squares\977_Squares.csproj", "{4EF4270D-9216-4638-8BCD-52D64F6D99A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "977_Squares", "977_Squares\977_Squares.csproj", "{4EF4270D-9216-4638-8BCD-52D64F6D99A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "977_Squares.Test", "977_Squares.Test\977_Squares.Test.csproj", "{58644F3C-E714-49B1-A4AF-F0AB8958276B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "977_Squares.Test", "977_Squares.Test\977_Squares.Test.csproj", "{58644F3C-E714-49B1-A4AF-F0AB8958276B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "189_Rotate_Array", "189_Rotate_Array\189_Rotate_Array.csproj", "{5D5BDF56-C2D6-40BB-8F7C-14649B5F25A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "189_Rotate_Array", "189_Rotate_Array\189_Rotate_Array.csproj", "{5D5BDF56-C2D6-40BB-8F7C-14649B5F25A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "189_Rotate_Array.Test", "189_Rotate_Array.Test\189_Rotate_Array.Test.csproj", "{177D835B-8C17-46AB-9A1D-0ACF0E11D313}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "189_Rotate_Array.Test", "189_Rotate_Array.Test\189_Rotate_Array.Test.csproj", "{177D835B-8C17-46AB-9A1D-0ACF0E11D313}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "283_Move_Zeroes", "283_Move_Zeroes\283_Move_Zeroes.csproj", "{31F018CC-2CF0-47CC-874F-EDEFF26EF57E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "283_Move_Zeroes.Test", "283_Move_Zeroes.Test\283_Move_Zeroes.Test.csproj", "{313A47DF-1F0F-4F88-84FA-12FFFA4EC214}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "167_Two_Sum_2", "167_Two_Sum_2\167_Two_Sum_2.csproj", "{D03436E2-C172-4BC2-8BF4-69EFCC8AD269}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "167_Two_Sum_2.Test", "167_Two_Sum_2.Test\167_Two_Sum_2.Test.csproj", "{C150A564-4ED9-4272-B2EC-B558F99846D8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +77,22 @@ Global
 		{177D835B-8C17-46AB-9A1D-0ACF0E11D313}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{177D835B-8C17-46AB-9A1D-0ACF0E11D313}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{177D835B-8C17-46AB-9A1D-0ACF0E11D313}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31F018CC-2CF0-47CC-874F-EDEFF26EF57E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31F018CC-2CF0-47CC-874F-EDEFF26EF57E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31F018CC-2CF0-47CC-874F-EDEFF26EF57E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31F018CC-2CF0-47CC-874F-EDEFF26EF57E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{313A47DF-1F0F-4F88-84FA-12FFFA4EC214}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{313A47DF-1F0F-4F88-84FA-12FFFA4EC214}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{313A47DF-1F0F-4F88-84FA-12FFFA4EC214}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{313A47DF-1F0F-4F88-84FA-12FFFA4EC214}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D03436E2-C172-4BC2-8BF4-69EFCC8AD269}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D03436E2-C172-4BC2-8BF4-69EFCC8AD269}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D03436E2-C172-4BC2-8BF4-69EFCC8AD269}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D03436E2-C172-4BC2-8BF4-69EFCC8AD269}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C150A564-4ED9-4272-B2EC-B558F99846D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C150A564-4ED9-4272-B2EC-B558F99846D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C150A564-4ED9-4272-B2EC-B558F99846D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C150A564-4ED9-4272-B2EC-B558F99846D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
