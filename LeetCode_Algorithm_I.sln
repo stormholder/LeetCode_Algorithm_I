@@ -31,6 +31,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "167_Two_Sum_2", "167_Two_Su
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "167_Two_Sum_2.Test", "167_Two_Sum_2.Test\167_Two_Sum_2.Test.csproj", "{C150A564-4ED9-4272-B2EC-B558F99846D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "344_Reverse_String", "344_Reverse_String\344_Reverse_String.csproj", "{37F339EA-37B8-4B3D-980A-B6E8554A214E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "344_Reverse_String.Test", "344_Reverse_String.Test\344_Reverse_String.Test.csproj", "{282E912B-6736-4F6E-B24B-F60C7932E19D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +97,14 @@ Global
 		{C150A564-4ED9-4272-B2EC-B558F99846D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C150A564-4ED9-4272-B2EC-B558F99846D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C150A564-4ED9-4272-B2EC-B558F99846D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37F339EA-37B8-4B3D-980A-B6E8554A214E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37F339EA-37B8-4B3D-980A-B6E8554A214E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37F339EA-37B8-4B3D-980A-B6E8554A214E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37F339EA-37B8-4B3D-980A-B6E8554A214E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{282E912B-6736-4F6E-B24B-F60C7932E19D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{282E912B-6736-4F6E-B24B-F60C7932E19D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{282E912B-6736-4F6E-B24B-F60C7932E19D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{282E912B-6736-4F6E-B24B-F60C7932E19D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
