@@ -21,14 +21,14 @@ namespace _19_Remove_Nth_Node.Test
             {
                 new ListNode(1),
                 1,
-                new ListNode()
+                null
             },
             new object[]
             {
                 new ListNode(1, new ListNode(2)),
                 1,
                 new ListNode(1)
-            },
+            }
         };
 
         [TestCaseSource(nameof(TestCases))]
@@ -40,7 +40,7 @@ namespace _19_Remove_Nth_Node.Test
             List<int> act = new();
             solution.ToList(ref exp, expected);
             solution.ToList(ref act, actual);
-            Assert.That(exp, Is.EquivalentTo(act));
+            Assert.That(act, Is.EquivalentTo(exp));
         }
     }
 }
