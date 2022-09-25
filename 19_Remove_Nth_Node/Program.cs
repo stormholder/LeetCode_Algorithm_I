@@ -22,14 +22,17 @@ public class Solution
 
     public ListNode RemoveNthFromEnd(ListNode head, int n)
     {
-        ListNode result = new();
         int length = Count(0, head);
         int toRemove = length - n;
-        Console.WriteLine($"Remove {toRemove}th element");
+        //Console.WriteLine($"Remove {toRemove}th element");
         int[] prefixVals = new int[toRemove];
         int[] suffixVals = new int[n - 1];
+        if (prefixVals.Length == 0 && suffixVals.Length == 0)
+        {
+            return null;
+        }
         ListNode node = head;
-        if (toRemove > 0)
+        if (prefixVals.Length > 0)
         {
             for (int i = 0; i < toRemove; i++)
             {
@@ -38,7 +41,7 @@ public class Solution
             }
         }
         node = node.next;
-        if (n - 1 > 0)
+        if (suffixVals.Length > 0)
         {
             int j = 0;
             while (node != null || j < n - 2)
@@ -48,10 +51,29 @@ public class Solution
                 node = node.next;
             }
         }
-        Console.WriteLine($"Prefixes: {string.Join(',', prefixVals)}");
-        Console.WriteLine($"Suffixes: {string.Join(',', suffixVals)}");
 
-        return result;
+        //Console.WriteLine($"Prefixes: {string.Join(',', prefixVals)}");
+        //Console.WriteLine($"Suffixes: {string.Join(',', suffixVals)}");
+
+        node = null;
+        ListNode prevNode = null;
+        if (suffixVals.Length > 0)
+        {
+            for (int k = suffixVals.Length - 1; k >= 0; k--)
+            {
+                node = new(suffixVals[k], prevNode);
+                prevNode = node;
+            }
+        }
+        if (prefixVals.Length > 0)
+        {
+            for (int k = prefixVals.Length - 1; k >= 0; k--)
+            {
+                node = new(prefixVals[k], prevNode);
+                prevNode = node;
+            }
+        }
+        return node;
     }
 
     public List<int> ToList(ref List<int> list, ListNode head)
