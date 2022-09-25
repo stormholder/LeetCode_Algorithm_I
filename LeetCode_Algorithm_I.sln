@@ -43,6 +43,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19_Remove_Nth_Node", "19_Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19_Remove_Nth_Node.Test", "19_Remove_Nth_Node.Test\19_Remove_Nth_Node.Test.csproj", "{12176665-0908-4BE7-A061-EE2473CA994E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3_Longest_Substring", "3_Longest_Substring\3_Longest_Substring.csproj", "{90C88185-B189-47BE-A2C0-D41318E04207}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3_Longest_Substring.Test", "3_Longest_Substring.Test\3_Longest_Substring.Test.csproj", "{F16C9F37-4DE7-47FA-9D0B-F35C4E6D6B11}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +133,14 @@ Global
 		{12176665-0908-4BE7-A061-EE2473CA994E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12176665-0908-4BE7-A061-EE2473CA994E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12176665-0908-4BE7-A061-EE2473CA994E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90C88185-B189-47BE-A2C0-D41318E04207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90C88185-B189-47BE-A2C0-D41318E04207}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90C88185-B189-47BE-A2C0-D41318E04207}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90C88185-B189-47BE-A2C0-D41318E04207}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F16C9F37-4DE7-47FA-9D0B-F35C4E6D6B11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F16C9F37-4DE7-47FA-9D0B-F35C4E6D6B11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F16C9F37-4DE7-47FA-9D0B-F35C4E6D6B11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F16C9F37-4DE7-47FA-9D0B-F35C4E6D6B11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
