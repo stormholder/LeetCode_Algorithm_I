@@ -47,6 +47,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3_Longest_Substring", "3_Lo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3_Longest_Substring.Test", "3_Longest_Substring.Test\3_Longest_Substring.Test.csproj", "{F16C9F37-4DE7-47FA-9D0B-F35C4E6D6B11}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "567_Permutation", "567_Permutation\567_Permutation.csproj", "{C9248753-AD1E-4B7D-85EC-FFF098CFF15D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "567_Permutation.Test", "567_Permutation.Test\567_Permutation.Test.csproj", "{0CB19192-31F3-43AA-BED0-D3C41215B5B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +145,14 @@ Global
 		{F16C9F37-4DE7-47FA-9D0B-F35C4E6D6B11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F16C9F37-4DE7-47FA-9D0B-F35C4E6D6B11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F16C9F37-4DE7-47FA-9D0B-F35C4E6D6B11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9248753-AD1E-4B7D-85EC-FFF098CFF15D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9248753-AD1E-4B7D-85EC-FFF098CFF15D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9248753-AD1E-4B7D-85EC-FFF098CFF15D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9248753-AD1E-4B7D-85EC-FFF098CFF15D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CB19192-31F3-43AA-BED0-D3C41215B5B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CB19192-31F3-43AA-BED0-D3C41215B5B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CB19192-31F3-43AA-BED0-D3C41215B5B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CB19192-31F3-43AA-BED0-D3C41215B5B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
