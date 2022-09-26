@@ -15,13 +15,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "35_Search_Insert_Position",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "35_Search_Insert_Position.Test", "Test\Day 1\35_Search_Insert_Position.Test\35_Search_Insert_Position.Test.csproj", "{14538B32-59DC-4454-8582-B6A776B9847D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "977_Squares", "977_Squares\977_Squares.csproj", "{4EF4270D-9216-4638-8BCD-52D64F6D99A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "977_Squares", "Src\Day 2\977_Squares\977_Squares.csproj", "{4EF4270D-9216-4638-8BCD-52D64F6D99A8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "977_Squares.Test", "977_Squares.Test\977_Squares.Test.csproj", "{58644F3C-E714-49B1-A4AF-F0AB8958276B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "977_Squares.Test", "Test\Day 2\977_Squares.Test\977_Squares.Test.csproj", "{58644F3C-E714-49B1-A4AF-F0AB8958276B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "189_Rotate_Array", "189_Rotate_Array\189_Rotate_Array.csproj", "{5D5BDF56-C2D6-40BB-8F7C-14649B5F25A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "189_Rotate_Array", "Src\Day 2\189_Rotate_Array\189_Rotate_Array.csproj", "{5D5BDF56-C2D6-40BB-8F7C-14649B5F25A8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "189_Rotate_Array.Test", "189_Rotate_Array.Test\189_Rotate_Array.Test.csproj", "{177D835B-8C17-46AB-9A1D-0ACF0E11D313}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "189_Rotate_Array.Test", "Test\Day 2\189_Rotate_Array.Test\189_Rotate_Array.Test.csproj", "{177D835B-8C17-46AB-9A1D-0ACF0E11D313}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "283_Move_Zeroes", "283_Move_Zeroes\283_Move_Zeroes.csproj", "{31F018CC-2CF0-47CC-874F-EDEFF26EF57E}"
 EndProject
