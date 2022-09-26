@@ -23,13 +23,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "189_Rotate_Array", "Src\Day
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "189_Rotate_Array.Test", "Test\Day 2\189_Rotate_Array.Test\189_Rotate_Array.Test.csproj", "{177D835B-8C17-46AB-9A1D-0ACF0E11D313}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "283_Move_Zeroes", "283_Move_Zeroes\283_Move_Zeroes.csproj", "{31F018CC-2CF0-47CC-874F-EDEFF26EF57E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "283_Move_Zeroes", "Src\Day 3\283_Move_Zeroes\283_Move_Zeroes.csproj", "{31F018CC-2CF0-47CC-874F-EDEFF26EF57E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "283_Move_Zeroes.Test", "283_Move_Zeroes.Test\283_Move_Zeroes.Test.csproj", "{313A47DF-1F0F-4F88-84FA-12FFFA4EC214}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "283_Move_Zeroes.Test", "Test\Day 3\283_Move_Zeroes.Test\283_Move_Zeroes.Test.csproj", "{313A47DF-1F0F-4F88-84FA-12FFFA4EC214}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "167_Two_Sum_2", "167_Two_Sum_2\167_Two_Sum_2.csproj", "{D03436E2-C172-4BC2-8BF4-69EFCC8AD269}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "167_Two_Sum_2", "Src\Day 3\167_Two_Sum_2\167_Two_Sum_2.csproj", "{D03436E2-C172-4BC2-8BF4-69EFCC8AD269}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "167_Two_Sum_2.Test", "167_Two_Sum_2.Test\167_Two_Sum_2.Test.csproj", "{C150A564-4ED9-4272-B2EC-B558F99846D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "167_Two_Sum_2.Test", "Test\Day 3\167_Two_Sum_2.Test\167_Two_Sum_2.Test.csproj", "{C150A564-4ED9-4272-B2EC-B558F99846D8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "344_Reverse_String", "344_Reverse_String\344_Reverse_String.csproj", "{37F339EA-37B8-4B3D-980A-B6E8554A214E}"
 EndProject

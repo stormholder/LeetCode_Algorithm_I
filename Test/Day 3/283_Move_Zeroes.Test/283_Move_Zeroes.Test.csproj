@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\283_Move_Zeroes\283_Move_Zeroes.csproj" />
+    <ProjectReference Include="..\..\..\Src\Day 3\283_Move_Zeroes\283_Move_Zeroes.csproj" />
   </ItemGroup>
 
 </Project>
