@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>_35_Search_Insert_Position.Test</RootNamespace>
+    <RootNamespace>_704_Binary_Search.Test</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 
@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\35_Search_Insert_Position\35_Search_Insert_Position.csproj" />
+    <ProjectReference Include="..\..\..\Src\Day 1\704_Binary_Search\704_Binary_Search.csproj" />
   </ItemGroup>
 
 </Project>

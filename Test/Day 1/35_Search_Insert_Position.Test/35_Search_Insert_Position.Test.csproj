@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>_278_First_Bad_Version.Test</RootNamespace>
+    <RootNamespace>_35_Search_Insert_Position.Test</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 
@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\278_First_Bad_Version\278_First_Bad_Version.csproj" />
+    <ProjectReference Include="..\..\..\Src\Day 1\35_Search_Insert_Position\35_Search_Insert_Position.csproj" />
   </ItemGroup>
 
 </Project>

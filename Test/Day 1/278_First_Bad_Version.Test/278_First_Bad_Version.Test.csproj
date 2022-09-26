@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>_704_Binary_Search.Test</RootNamespace>
+    <RootNamespace>_278_First_Bad_Version.Test</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 
@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\704_Binary_Search\704_Binary_Search.csproj" />
+    <ProjectReference Include="..\..\..\Src\Day 1\278_First_Bad_Version\278_First_Bad_Version.csproj" />
   </ItemGroup>
 
 </Project>
