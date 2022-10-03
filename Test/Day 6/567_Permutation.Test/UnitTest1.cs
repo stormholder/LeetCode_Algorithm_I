@@ -21,6 +21,12 @@ namespace _567_Permutation.Test
             {
                 "ab",
                 "eidboaoo",
+                false
+            },
+            new object[]
+            {
+                "adc",
+                "dcda",
                 true
             }
         };
