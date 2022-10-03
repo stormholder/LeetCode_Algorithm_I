@@ -35,6 +35,20 @@ namespace _733_Flood_Fill.Test
                     new int[] { 0, 0, 0 },
                     new int[] { 0, 0, 0 }
                 }
+            },
+            new object[]
+            {
+                new int[][] {
+                    new int[] { 0, 0, 0 },
+                    new int[] { 0, 0, 0 }
+                },
+                1,
+                0,
+                2,
+                new int[][] {
+                    new int[] { 2, 2, 2 },
+                    new int[] { 2, 2, 2 }
+                }
             }
         };
 
