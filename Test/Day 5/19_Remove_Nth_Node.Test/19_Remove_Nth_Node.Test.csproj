@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>_557_Reverse_Words.Test</RootNamespace>
+    <RootNamespace>_19_Remove_Nth_Node.Test</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 
@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\557_Reverse_Words\557_Reverse_Words.csproj" />
+    <ProjectReference Include="..\..\..\Src\Day 5\19_Remove_Nth_Node\19_Remove_Nth_Node.csproj" />
   </ItemGroup>
 
 </Project>

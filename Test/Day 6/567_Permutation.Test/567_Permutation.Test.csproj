@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>_344_Reverse_String.Test</RootNamespace>
+    <RootNamespace>_567_Permutation.Test</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 
@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\344_Reverse_String\344_Reverse_String.csproj" />
+    <ProjectReference Include="..\..\..\Src\Day 6\567_Permutation\567_Permutation.csproj" />
   </ItemGroup>
 
 </Project>

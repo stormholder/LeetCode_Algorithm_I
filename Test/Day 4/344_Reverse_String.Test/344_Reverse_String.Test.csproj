@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>_3_Longest_Substring.Test</RootNamespace>
+    <RootNamespace>_344_Reverse_String.Test</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 
@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\3_Longest_Substring\3_Longest_Substring.csproj" />
+    <ProjectReference Include="..\..\..\Src\Day 4\344_Reverse_String\344_Reverse_String.csproj" />
   </ItemGroup>
 
 </Project>

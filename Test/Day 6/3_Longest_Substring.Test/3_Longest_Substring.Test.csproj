@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>_19_Remove_Nth_Node.Test</RootNamespace>
+    <RootNamespace>_3_Longest_Substring.Test</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 
@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\19_Remove_Nth_Node\19_Remove_Nth_Node.csproj" />
+    <ProjectReference Include="..\..\..\Src\Day 6\3_Longest_Substring\3_Longest_Substring.csproj" />
   </ItemGroup>
 
 </Project>

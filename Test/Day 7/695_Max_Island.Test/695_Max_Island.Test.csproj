@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>_567_Permutation.Test</RootNamespace>
+    <RootNamespace>_695_Max_Island.Test</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 
@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\567_Permutation\567_Permutation.csproj" />
+    <ProjectReference Include="..\..\..\Src\Day 7\695_Max_Island\695_Max_Island.csproj" />
   </ItemGroup>
 
 </Project>
