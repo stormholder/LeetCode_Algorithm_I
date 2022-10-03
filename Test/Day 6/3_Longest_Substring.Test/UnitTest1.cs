@@ -25,6 +25,21 @@ namespace _3_Longest_Substring.Test
             {
                 "pwwkew",
                 3
+            },
+            new object[]
+            {
+                "",
+                0
+            },
+            new object[]
+            {
+                " ",
+                1
+            },
+            new object[]
+            {
+                "au",
+                2
             }
         };
 
