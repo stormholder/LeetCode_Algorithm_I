@@ -4,7 +4,8 @@ public class Solution
 {
     public int MaxAreaOfIsland(int[][] grid)
     {
-
+        int max = 0;
+        return max;
     }
 }
 
