@@ -45,6 +45,7 @@ public class Solution
                     var left = new Tile() { X = tile.X - 1, Y = tile.Y };
                     if (!visited[left.X, left.Y] && grid[tile.Y][tile.X - 1] == 1)
                     {
+                        visited[left.X, left.Y] = true;
                         queue.Enqueue(left);
                     }
                 }
@@ -53,6 +54,7 @@ public class Solution
                     var right = new Tile() { X = tile.X + 1, Y = tile.Y };
                     if (!visited[right.X, right.Y] && grid[tile.Y][tile.X + 1] == 1)
                     {
+                        visited[right.X, right.Y] = true;
                         queue.Enqueue(right);
                     }
                 }
@@ -61,6 +63,7 @@ public class Solution
                     var up = new Tile() { X = tile.X, Y = tile.Y - 1 };
                     if (!visited[up.X, up.Y] && grid[tile.Y - 1][tile.X] == 1)
                     {
+                        visited[up.X, up.Y] = true;
                         queue.Enqueue(up);
                     }
                 }
@@ -69,6 +72,7 @@ public class Solution
                     var down = new Tile() { X = tile.X, Y = tile.Y + 1 };
                     if (!visited[down.X, down.Y] && grid[tile.Y + 1][tile.X] == 1)
                     {
+                        visited[down.X, down.Y] = true;
                         queue.Enqueue(down);
                     }
                 }
