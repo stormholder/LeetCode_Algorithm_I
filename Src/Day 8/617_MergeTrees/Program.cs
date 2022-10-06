@@ -65,9 +65,23 @@ public class TreeNode
 
 public class Solution
 {
+    private TreeNode mergeNode(TreeNode? node1, TreeNode? node2, ref TreeNode? merged)
+    {
+        if (node1 is null && node2 is null)
+            return null;
+        if (merged is null)
+            merged = new();
+        merged.val = (node1?.val ?? 0) + (node2?.val ?? 0);
+        merged.left = mergeNode(node1?.left ?? null, node2?.left ?? null, ref merged.left);
+        merged.right = mergeNode(node1?.right ?? null, node2?.right ?? null, ref merged.right);
+        return merged;
+    }
+
     public TreeNode MergeTrees(TreeNode root1, TreeNode root2)
     {
-        return new TreeNode();
+        TreeNode merged = new();
+        mergeNode(root1, root2, ref merged);
+        return merged;
     }
 }
 
