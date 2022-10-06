@@ -20,6 +20,20 @@ namespace _617_MergeTrees.Test
             }
         };
 
+        static object[] TestCasesNodes =
+        {
+            new object[]
+            {
+                new int?[] { 1, 3, 2, 5 },
+                new TreeNode(1, new TreeNode(3, new TreeNode(5)), new TreeNode(2))
+            },
+            new object[]
+            {
+                new int?[] { 2, 1, 3, null, 4, null, 7 },
+                new TreeNode(2, new TreeNode(1, null, new TreeNode(4)), new TreeNode(3, null, new TreeNode(7)))
+            }
+        };
+
         [SetUp]
         public void Setup()
         {
@@ -29,8 +43,21 @@ namespace _617_MergeTrees.Test
         public void Test1(int?[] root1, int?[] root2, int?[] expected)
         {
             Solution solution = new();
-            var actual = solution.MergeTrees(solution.ArrayToTreeNode(root1), solution.ArrayToTreeNode(root2));
-            Assert.That(solution.TreeNodeToArray(actual), Is.EqualTo(expected));
+            TreeNode node = new();
+            var t1 = node.FromArray(ref root1);
+            var t2 = node.FromArray(ref root2);
+            var actual = solution.MergeTrees(t1, t2);
+            var values = new List<int?>();
+            var act = node.ToArray(ref actual, ref values);
+            Assert.That(act, Is.EqualTo(expected));
+        }
+
+        [TestCaseSource(nameof(TestCasesNodes))]
+        public void Test2(int?[] arr, TreeNode expected)
+        {
+            TreeNode node = new();
+            var actual = node.FromArray(ref arr);
+            Assert.That(actual, Is.EqualTo(expected));
         }
     }
 }
