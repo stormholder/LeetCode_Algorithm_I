@@ -31,13 +31,34 @@ public class TreeNode
         return node;
     }
 
-    public int?[] ToArray(ref TreeNode? root, ref List<int?> values, int idx = 0)
+    private void makeFlat(ref Dictionary<int, int?> pairs, TreeNode? node, int idx = 1)
     {
-        // TODO
-        if (root is null)
+        if (node == null)
+            return;
+        pairs.Add(idx, node.val);
+        if (node.left != null)
+            makeFlat(ref pairs, node.left, idx * 2);
+        if (node.right != null)
+            makeFlat(ref pairs, node.right, idx * 2 + 1);
+    }
+
+    public int?[] ToArray()
+    {
+        if (this is null)
             return new int?[] { null };
 
-        return new int?[] { null };
+        Dictionary<int, int?>? pairs = new();
+        makeFlat(ref pairs, this);
+
+        var len = pairs.Keys.Max();
+        var result = new int?[len];
+
+        foreach ( var key in pairs.Keys )
+        {
+            result[key - 1] = pairs[key];
+        }
+
+        return result;
     }
 }
 
