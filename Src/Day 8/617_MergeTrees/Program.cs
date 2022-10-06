@@ -79,6 +79,8 @@ public class Solution
 
     public TreeNode MergeTrees(TreeNode root1, TreeNode root2)
     {
+        if (root1 is null && root2 is null)
+            return null;
         TreeNode merged = new();
         mergeNode(root1, root2, ref merged);
         return merged;
