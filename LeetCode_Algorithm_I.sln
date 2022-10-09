@@ -59,13 +59,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "695_Max_Island", "Src\Day 7
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "695_Max_Island.Test", "Test\Day 7\695_Max_Island.Test\695_Max_Island.Test.csproj", "{3D9BC54A-A4D2-4336-87D2-5EB94DF25807}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "617_MergeTrees", "Src\Day 8\617_MergeTrees\617_MergeTrees.csproj", "{83A850D6-E0FC-4ED0-A07B-7DD9F421352B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "617_MergeTrees", "Src\Day 8\617_MergeTrees\617_MergeTrees.csproj", "{83A850D6-E0FC-4ED0-A07B-7DD9F421352B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "617_MergeTrees.Test", "Test\Day 8\617_MergeTrees.Test\617_MergeTrees.Test.csproj", "{9AFA1F41-599A-47E0-94FF-CDE7A3C65D20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "617_MergeTrees.Test", "Test\Day 8\617_MergeTrees.Test\617_MergeTrees.Test.csproj", "{9AFA1F41-599A-47E0-94FF-CDE7A3C65D20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "116_PopulatingNext", "Src\Day 8\116_PopulatingNext\116_PopulatingNext.csproj", "{C8219E9C-D8D7-4BAB-9CED-74E3EE680B05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "116_PopulatingNext", "Src\Day 8\116_PopulatingNext\116_PopulatingNext.csproj", "{C8219E9C-D8D7-4BAB-9CED-74E3EE680B05}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "116_PopulatingNext.Test", "Test\Day 8\116_PopulatingNext.Test\116_PopulatingNext.Test.csproj", "{E67238C6-CC52-4441-9F3D-96DF39316958}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "116_PopulatingNext.Test", "Test\Day 8\116_PopulatingNext.Test\116_PopulatingNext.Test.csproj", "{E67238C6-CC52-4441-9F3D-96DF39316958}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "542_Matrix", "Src\Day 9\542_Matrix\542_Matrix.csproj", "{A7691F46-316A-40E4-A371-DC011C721C67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "542_Matrix.Test", "Test\Day 9\542_Matrix.Test\542_Matrix.Test.csproj", "{8D62B0E0-3C19-467A-A4B1-77FB1CE20F6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "994_RottingOranges", "Src\Day 9\994_RottingOranges\994_RottingOranges.csproj", "{09D5AEEE-B3BD-425C-B0C4-FC17BFA8EBF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "994_RottingOranges.Test", "Test\Day 9\994_RottingOranges.Test\994_RottingOranges.Test.csproj", "{4C3B6EF5-61C4-498F-86ED-553B9D03C0C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -201,6 +209,22 @@ Global
 		{E67238C6-CC52-4441-9F3D-96DF39316958}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E67238C6-CC52-4441-9F3D-96DF39316958}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E67238C6-CC52-4441-9F3D-96DF39316958}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7691F46-316A-40E4-A371-DC011C721C67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7691F46-316A-40E4-A371-DC011C721C67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7691F46-316A-40E4-A371-DC011C721C67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7691F46-316A-40E4-A371-DC011C721C67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D62B0E0-3C19-467A-A4B1-77FB1CE20F6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D62B0E0-3C19-467A-A4B1-77FB1CE20F6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D62B0E0-3C19-467A-A4B1-77FB1CE20F6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D62B0E0-3C19-467A-A4B1-77FB1CE20F6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09D5AEEE-B3BD-425C-B0C4-FC17BFA8EBF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09D5AEEE-B3BD-425C-B0C4-FC17BFA8EBF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09D5AEEE-B3BD-425C-B0C4-FC17BFA8EBF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09D5AEEE-B3BD-425C-B0C4-FC17BFA8EBF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C3B6EF5-61C4-498F-86ED-553B9D03C0C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C3B6EF5-61C4-498F-86ED-553B9D03C0C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C3B6EF5-61C4-498F-86ED-553B9D03C0C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C3B6EF5-61C4-498F-86ED-553B9D03C0C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
