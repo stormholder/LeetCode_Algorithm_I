@@ -35,6 +35,35 @@ namespace _542_Matrix.Test
                     new int[] { 0, 1, 0 },
                     new int[] { 1, 2, 1 }
                 }
+            },
+            new object[]
+            {
+                new int[][]
+                {
+                    new int[] { 1, 0, 1, 1, 0, 0, 1, 0, 0, 1 },
+                    new int[] { 0, 1, 1, 0, 1, 0, 1, 0, 1, 1 },
+                    new int[] { 0, 0, 1, 0, 1, 0, 0, 1, 0, 0 },
+                    new int[] { 1, 0, 1, 0, 1, 1, 1, 1, 1, 1 },
+                    new int[] { 0, 1, 0, 1, 1, 0, 0, 0, 0, 1 },
+                    new int[] { 0, 0, 1, 0, 1, 1, 1, 0, 1, 0 },
+                    new int[] { 0, 1, 0, 1, 0, 1, 0, 0, 1, 1 },
+                    new int[] { 1, 0, 0, 0, 1, 1, 1, 1, 0, 1 },
+                    new int[] { 1, 1, 1, 1, 1, 1, 1, 0, 1, 0 },
+                    new int[] { 1, 1, 1, 1, 0, 1, 0, 0, 1, 1 }
+                },
+                new int[][]
+                {
+                    new int[] { 1,0,1,1,0,0,1,0,0,1 },
+                    new int[] { 0,1,1,0,1,0,1,0,1,1 },
+                    new int[] { 0,0,1,0,1,0,0,1,0,0 },
+                    new int[] { 1,0,1,0,1,1,1,1,1,1 },
+                    new int[] { 0,1,0,1,1,0,0,0,0,1 },
+                    new int[] { 0,0,1,0,1,1,1,0,1,0 },
+                    new int[] { 0,1,0,1,0,1,0,0,1,1 },
+                    new int[] { 1,0,0,0,1,2,1,1,0,1 },
+                    new int[] { 2,1,1,1,1,2,1,0,1,0 },
+                    new int[] { 3, 2, 2, 1, 0, 1, 0, 0, 1, 1 }
+                }
             }
         };
 
@@ -44,7 +73,7 @@ namespace _542_Matrix.Test
         }
 
         [TestCaseSource(nameof(TestCases))]
-        public void Test1(int[][] grid, int[][] expected)
+        public void TestSolution(int[][] grid, int[][] expected)
         {
             Solution solution = new();
             var actual = solution.UpdateMatrix(grid);
