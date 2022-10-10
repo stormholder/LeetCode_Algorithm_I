@@ -3,71 +3,54 @@
 public class Solution
 {
 
-    private int MinStepsTopLeft(ref int[][] mat, int x, int y)
+    private int MinFromTopLeft(ref int[][] mat, int x, int y)
     {
-        int[] neighbours = new int[2] { 100000, 100000 };
-
-        if (y - 1 >= 0)
-        {
-            neighbours[0] = mat[y - 1][x];
-        }
-        if (x - 1 >= 0)
-        {
-            neighbours[1] = mat[y][x - 1];
-        }
-        return Math.Min(neighbours[0], neighbours[1]) + 1;
+        var top  = (y > 0) ? mat[y - 1][x] : int.MaxValue - 1;
+        var left = (x > 0) ? mat[y][x - 1] : int.MaxValue - 1;
+        return Math.Min(top, left) + 1;
     }
 
-    private int MinStepsBottomRight(ref int[][] mat, int x, int y, int currentStepsCount)
+    private int MinFromBottomRight(ref int[][] mat, int x, int y)
     {
-        int yMax = mat.Length;
-        int xMax = mat[0].Length;
-        int[] neighbours = new int[2] { 100000, 100000 };
-        if (y + 1 < yMax)
-        {
-            neighbours[0] = mat[y + 1][x];
-        }
-        if (x + 1 < xMax)
-        {
-            neighbours[1] = mat[y][x + 1];
-        }
-        var minBottomRight = Math.Min(neighbours[0], neighbours[1]) + 1;
-
-        return Math.Min(currentStepsCount, minBottomRight);
+        var bottom = (y + 1 < mat.Length)    ? mat[y + 1][x] : int.MaxValue - 1;
+        var right  = (x + 1 < mat[0].Length) ? mat[y][x + 1] : int.MaxValue - 1;
+        return Math.Min(bottom, right) + 1;
 
     }
 
     public int[][] UpdateMatrix(int[][] mat)
     {
-        int[][] result = new int[mat.Length][];
-        for (int i = 0; i < mat.Length; i++)
+        int yMax = mat.Length;
+        int xMax = mat[0].Length;
+        int[][] result = new int[yMax][];
+        for (int y = 0; y < yMax; y++)
         {
-            result[i] = new int[mat[i].Length];
+            result[y] = new int[xMax];
         }
 
-        for (int y = 0; y < mat.Length; y++)
+        for (int y = 0; y < yMax; y++)
         {
-            for (int x = 0; x < mat[y].Length; x++)
+            for (int x = 0; x < xMax; x++)
             {
                 if (mat[y][x] == 0)
                 {
                     result[y][x] = 0;
                     continue;
                 }
-                result[y][x] = MinStepsTopLeft(ref mat, x, y);
+                result[y][x] = MinFromTopLeft(ref mat, x, y);
             }
         }
 
-        for (int y = mat.Length - 1; y >= 0; y--)
+        for (int y = yMax - 1; y >= 0; y--)
         {
-            for (int x = mat[y].Length - 1; x >= 0; x--)
+            for (int x = xMax - 1; x >= 0; x--)
             {
                 if (mat[y][x] == 0)
                 {
                     result[y][x] = 0;
                     continue;
                 }
-                result[y][x] = MinStepsBottomRight(ref mat, x, y, result[y][x]);
+                result[y][x] = Math.Min(result[y][x], MinFromBottomRight(ref mat, x, y));
             }
         }
 
