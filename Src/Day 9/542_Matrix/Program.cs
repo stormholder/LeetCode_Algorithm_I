@@ -1,22 +1,14 @@
 ﻿namespace Matrix;
 
+public struct Tile
+{
+    public int X {get;set;}
+    public int Y {get;set;}
+}
+
 public class Solution
 {
-
-    private int MinFromTopLeft(ref int[][] mat, int x, int y)
-    {
-        var top  = (y > 0) ? mat[y - 1][x] : int.MaxValue - 1;
-        var left = (x > 0) ? mat[y][x - 1] : int.MaxValue - 1;
-        return Math.Min(top, left) + 1;
-    }
-
-    private int MinFromBottomRight(ref int[][] mat, int x, int y)
-    {
-        var bottom = (y + 1 < mat.Length)    ? mat[y + 1][x] : int.MaxValue - 1;
-        var right  = (x + 1 < mat[0].Length) ? mat[y][x + 1] : int.MaxValue - 1;
-        return Math.Min(bottom, right) + 1;
-
-    }
+    private readonly int[,] DIRECTIONS = new int[,]{{-1,0},{1,0},{0,-1},{0,1}};
 
     public int[][] UpdateMatrix(int[][] mat)
     {
@@ -26,8 +18,9 @@ public class Solution
         for (int y = 0; y < yMax; y++)
         {
             result[y] = new int[xMax];
+            Array.Fill(result[y], int.MaxValue - 1);
         }
-
+        Queue<Tile> queue = new();
         for (int y = 0; y < yMax; y++)
         {
             for (int x = 0; x < xMax; x++)
@@ -35,22 +28,27 @@ public class Solution
                 if (mat[y][x] == 0)
                 {
                     result[y][x] = 0;
-                    continue;
+                    queue.Enqueue(new Tile() { X = x, Y = y });
                 }
-                result[y][x] = MinFromTopLeft(ref mat, x, y);
             }
         }
 
-        for (int y = yMax - 1; y >= 0; y--)
+        while (queue.Count > 0)
         {
-            for (int x = xMax - 1; x >= 0; x--)
+            Tile tile = queue.Dequeue();
+            for (int i = 0; i < 4; i++)
             {
-                if (mat[y][x] == 0)
+                int new_row = tile.Y + DIRECTIONS[i, 0];
+                int new_col = tile.X + DIRECTIONS[i, 1];
+                
+                if(new_row >= 0 && new_col >= 0 && new_row < yMax && new_col < xMax)
                 {
-                    result[y][x] = 0;
-                    continue;
+                    if(result[new_row][new_col] > result[tile.Y][tile.X] + 1)
+                    {
+                        result[new_row][new_col] = result[tile.Y][tile.X] + 1;
+                        queue.Enqueue(new Tile() { Y = new_row, X = new_col });
+                    }
                 }
-                result[y][x] = Math.Min(result[y][x], MinFromBottomRight(ref mat, x, y));
             }
         }
 
