@@ -11,7 +11,13 @@ public class ListNode {
 
 public class Solution {
     public ListNode ReverseList(ListNode head) {
-        return new ListNode();
+        if (head == null || head.next == null)
+            return head;
+        
+        ListNode iterator = ReverseList(head.next);
+        head.next.next = head;
+        head.next = null;
+        return iterator;
     }
 }
 
